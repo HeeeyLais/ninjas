@@ -15,7 +15,7 @@ public class Ninja {
     // @id em cima do campo que vai ser definido como cahve primária
     @Id
             // @GeneratedValue = gerar id em ordem crescente de forma sequencial automática
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id_ninja;
     // id é controlado/criado automaticamente pelo banco de dados, não precisa de criar setters e getters
     // @Column = define como cada atributo será criado
