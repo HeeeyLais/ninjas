@@ -8,7 +8,7 @@ import br.com.etec.ninjas.repository.NinjaRepository;
 
 //@ service classe pertence a cama de serviços da aplicação, responsável pelas regras de negócio = gerencia automaticamente
 @Service
-public class ninjaService {
+public class NinjaService {
     
     @Autowired
     private NinjaRepository ninjaRepository;
