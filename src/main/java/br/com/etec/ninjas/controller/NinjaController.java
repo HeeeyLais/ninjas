@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.etec.ninjas.model.Ninja;
 import br.com.etec.ninjas.service.NinjaService;
+import jakarta.validation.Valid;
 
 // recebe requisições HTTP e retorna respostas no formato JSON
 @RestController
@@ -21,7 +22,8 @@ public class NinjaController {
 
     //post = cadastrar/criar novos dados no sistema
     @PostMapping
-    public Ninja cadastrarNinja (@RequestBody Ninja ninja){
+        // valid pra refinamento de erro 
+    public Ninja cadastrarNinja (@Valid @RequestBody Ninja ninja){
         return ninjaService.cadastrarNinja(ninja);
             // cadastrarNinja = método criado la na service
     }
