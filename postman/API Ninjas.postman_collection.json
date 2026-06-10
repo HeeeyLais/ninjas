@@ -329,14 +329,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/ninjas/nome/Uchiha Sasuke",
+					"raw": "localhost:8080/ninjas/nomecompleto/Uchiha Sasuke",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"ninjas",
-						"nome",
+						"nomecompleto",
 						"Uchiha Sasuke"
 					]
 				},
@@ -345,7 +345,7 @@
 			"response": []
 		},
 		{
-			"name": "pesquisarNinja",
+			"name": "pesquisarNinjaPorId",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -362,6 +362,26 @@
 					]
 				},
 				"description": "por ID\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "buscarNinjaPorPartesDoNome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ninjas/nome/Uzumaki",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ninjas",
+						"nome",
+						"Uzumaki"
+					]
+				}
 			},
 			"response": []
 		}
