@@ -1,5 +1,7 @@
 package br.com.etec.ninjas.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,5 +17,9 @@ public class NinjaService {
 
     public Ninja cadastrarNinja (Ninja ninja){
         return ninjaRepository.save(ninja);
+    }
+
+    public List<Ninja> listarNinjas(){
+        return ninjaRepository.findAll();
     }
 }
