@@ -1,0 +1,47 @@
+{
+    "nome": "Uzumaki Naruto",
+    "cpf": "544.353.610-94",
+    "email": "reidelasuzumaki@folha.com.konoha"
+}
+
+{
+    "nome": "Uchiha Sasuke",
+    "cpf": "767.550.160-80",
+    "email": "UltimoUchiha@folha.com.konoha"
+}
+
+{
+    "nome": "Haruno Sakura",
+    "cpf": "196.989.360-50",
+    "email": "HarunoRosa@folha.com.konoha"
+}
+
+{
+    "nome": "Hatake Kakashi",
+    "cpf": "853.761.510-26",
+    "email": "NinjaCopiador@folha.com.konoha"
+}
+
+{
+    "nome": "Nara Shikamaru",
+    "cpf": "863.556.320-42",
+    "email": "GenioPreguicoso@folha.com.konoha"
+}
+
+{
+    "nome": "Orochimaru",
+    "cpf": "376.329.840-11",
+    "email": "SerpenteBranca@som.com.oto"
+}
+
+{
+    "nome": "Jiraya",
+    "cpf": "946.065.140-27",
+    "email": "AnciaoSapo@folha.com.konoha"
+}
+
+{
+    "nome": "Senju Tsunade",
+    "cpf": "233.144.220-75",
+    "email": "PrincesaLesma@folha.com.konoha"
+}
