@@ -23,6 +23,12 @@
 }
 
 {
+    "nome": "Sabaku no Gaara",
+    "cpf": "173.431.500-81",
+    "email": "ArmaFinal@areia.com.suna"
+}
+
+{
     "nome": "Nara Shikamaru",
     "cpf": "863.556.320-42",
     "email": "GenioPreguicoso@folha.com.konoha"
