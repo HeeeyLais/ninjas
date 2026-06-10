@@ -1,3 +1,6 @@
+// a MODEL só define os atributos, basicamente a planta da casa
+
+
 package br.com.etec.ninjas.model;
 
 import org.hibernate.validator.constraints.br.CPF;

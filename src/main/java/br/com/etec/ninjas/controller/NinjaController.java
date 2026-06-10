@@ -1,9 +1,11 @@
 package br.com.etec.ninjas.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,4 +37,22 @@ public class NinjaController {
     public List<Ninja> listarNinjas(){
         return ninjaService.listarNinjas();
     }
+
+        // get passando o id na url
+    @GetMapping("/id/{id}")
+                                            // converte o valor no get e armazena em id
+    public Optional<Ninja> pesquisarNinja(@PathVariable Long id){
+        return ninjaService.pesquisarNinjaPorId(id);
+    }
+
+    @GetMapping("/nomecompleto/{nome}")
+    public Ninja pesquisarNinjaPorNome(@PathVariable String nome){
+        return ninjaService.pesquisarNinjaPorNome(nome);
+    }
+
+    @GetMapping("/nome/{nome}")
+    public List<Ninja> buscarNinjaPorParteDoNome(@PathVariable String nome){
+        return ninjaService.buscarNinjaPorPartesDoNome(nome);
+    }
+
 }

@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "2ef645bc-54bc-4b60-a598-8d9cbefed708",
+		"name": "API Ninjas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cadastros",
+			"item": [
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Uzumaki Naruto\",\r\n    \"cpf\": \"544.353.610-94\",\r\n    \"email\": \"reidelasuzumaki@folha.com.konoha\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Uchiha Sasuke\",\r\n    \"cpf\": \"767.550.160-80\",\r\n    \"email\": \"UltimoUchiha@folha.com.konoha\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Haruno Sakura\",\r\n    \"cpf\": \"196.989.360-50\",\r\n    \"email\": \"HarunoRosa@folha.com.konoha\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Hatake Kakashi\",\r\n    \"cpf\": \"853.761.510-26\",\r\n    \"email\": \"NinjaCopiador@folha.com.konoha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Sabaku no Gaara\",\r\n    \"cpf\": \"173.431.500-81\",\r\n    \"email\": \"ArmaFinal@areia.com.suna\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Nara Shikamaru\",\r\n    \"cpf\": \"863.556.320-42\",\r\n    \"email\": \"GenioPreguicoso@folha.com.konoha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Orochimaru\",\r\n    \"cpf\": \"376.329.840-11\",\r\n    \"email\": \"SerpenteBranca@som.com.oto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Jiraya\",\r\n    \"cpf\": \"946.065.140-27\",\r\n    \"email\": \"AnciaoSapo@folha.com.konoha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Uzumaki Kushina\",\r\n    \"cpf\": \"262.625.570-08\",\r\n    \"email\": \"SangueQuenteVermelho@folha.com.konoha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastarNinja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Uzumaki Kushina\",\r\n    \"cpf\": \"262.625.570-08\",\r\n    \"email\": \"SangueQuenteVermelho@folha.com.konoha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ninjas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ninjas"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "listarNinjas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ninjas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ninjas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pesquisarNinjaPorNome",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Uzumaki Kushina\",\r\n    \"cpf\": \"262.625.570-08\",\r\n    \"email\": \"SangueQuenteVermelho@folha.com.konoha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ninjas/nome/Uchiha Sasuke",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ninjas",
+						"nome",
+						"Uchiha Sasuke"
+					]
+				},
+				"description": "v.id 1 Naruto"
+			},
+			"response": []
+		},
+		{
+			"name": "pesquisarNinja",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ninjas/id/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ninjas",
+						"id",
+						"3"
+					]
+				},
+				"description": "por ID\r\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

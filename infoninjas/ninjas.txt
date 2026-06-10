@@ -51,3 +51,10 @@
     "cpf": "233.144.220-75",
     "email": "PrincesaLesma@folha.com.konoha"
 }
+
+{
+    "cpf": "262.625.570-08",
+    "email": "SangueQuenteVermelho@folha.com.konoha",
+    "id_ninja": 53,
+    "nome": "Uzumaki Kushina"
+}
