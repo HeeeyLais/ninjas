@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2ef645bc-54bc-4b60-a598-8d9cbefed708",
+		"_postman_id": "4e749e8d-81e2-4138-b922-db956552e4a2",
 		"name": "API Ninjas",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -252,13 +252,13 @@
 					"response": []
 				},
 				{
-					"name": "cadastarNinja",
+					"name": "cadastrarNinja",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Uzumaki Kushina\",\r\n    \"cpf\": \"262.625.570-08\",\r\n    \"email\": \"SangueQuenteVermelho@folha.com.konoha\"\r\n}",
+							"raw": "{\r\n    \"nome\": \"Uchiha Madara\",\r\n    \"cpf\": \"994.063.180-40\",\r\n    \"email\": \"DeusUchiha@folha.com.konoha\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -380,6 +380,62 @@
 						"ninjas",
 						"nome",
 						"Uzumaki"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizarNinja",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Sabaku no Gaara\",\r\n    \"cpf\": \"173.431.500-81\",\r\n    \"email\": \"KazekageGaara@areia.com.suna\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ninjas/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ninjas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletarNinja",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Sabaku no Gaara\",\r\n    \"cpf\": \"173.431.500-81\",\r\n    \"email\": \"KazekageGaara@areia.com.suna\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ninjas/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ninjas",
+						"10"
 					]
 				}
 			},

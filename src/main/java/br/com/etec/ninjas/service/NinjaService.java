@@ -56,4 +56,9 @@ public class NinjaService {
         }
         return null;
     }
+
+    // void = sem retorno nenhum
+    public void deletarNinja(Long id){
+        ninjaRepository.deleteById(id);
+    }
 }

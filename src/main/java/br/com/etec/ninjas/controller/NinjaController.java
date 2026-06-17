@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -61,8 +62,15 @@ public class NinjaController {
         // UPDATE xxx WHERE ninja_id = {id}
     @PutMapping("/{id}")
     public Ninja atualizarNinja(@PathVariable Long id,
-        @Valid @RequestBody Ninja ninja) {
+                // requestbody = precisa de um corpo, informações sendo escritas(no caso d postman em json)
+            @Valid @RequestBody Ninja ninja) {
             return ninjaService.atualizarNinja(id, ninja);  
         }
-    
+
+    // MAPPING = mapeie as requisições que faço na minha rota através do método
+    @DeleteMapping("/{id}")
+        public void deletarNinja(@PathVariable Long id){
+            ninjaService.deletarNinja(id);
+        }
+
 }
