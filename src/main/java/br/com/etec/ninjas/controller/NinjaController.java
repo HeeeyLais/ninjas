@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -55,4 +56,13 @@ public class NinjaController {
         return ninjaService.buscarNinjaPorPartesDoNome(nome);
     }
 
+    // put para atualizar info q ja existe
+        // mesmo que UPDATE no sql
+        // UPDATE xxx WHERE ninja_id = {id}
+    @PutMapping("/{id}")
+    public Ninja atualizarNinja(@PathVariable Long id,
+        @Valid @RequestBody Ninja ninja) {
+            return ninjaService.atualizarNinja(id, ninja);  
+        }
+    
 }

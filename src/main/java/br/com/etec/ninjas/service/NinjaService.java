@@ -37,4 +37,23 @@ public class NinjaService {
     public List<Ninja> buscarNinjaPorPartesDoNome(String nome){
         return ninjaRepository.findByNomeContaining(nome);
     }
+
+                                // Long id = id do ninja que vai ser alterado
+                                        // Ninja ninjaAtualizado = objeto com novos dados
+    public Ninja atualizarNinja(Long id, Ninja ninjaAtualizado){
+        Optional <Ninja> ninjaCadastrado = ninjaRepository.findById(id);
+        // optional = pode ser que o ninja exista ou não
+                            // se o ninja foi encontrado | is present é método herdado do optional
+        if (ninjaCadastrado.isPresent()) {
+            Ninja ninja = ninjaCadastrado.get();
+            // get = busco, set = insiro
+            ninja.setNome(ninjaAtualizado.getNome());
+            ninja.setCpf(ninjaAtualizado.getCpf());
+            ninja.setEmail(ninjaAtualizado.getEmail());
+                // sempre passar todos os atributos que PODEM ser atualizados
+            
+            return ninjaRepository.save(ninja);
+        }
+        return null;
+    }
 }
