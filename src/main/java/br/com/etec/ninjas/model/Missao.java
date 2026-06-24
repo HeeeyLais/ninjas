@@ -19,6 +19,7 @@ public class Missao {
     @Id
         @GeneratedValue (strategy = GenerationType.SEQUENCE)
         private Long id_missao;
+
     @Column (name = "nome_missao", nullable = false)
         @NotBlank(message = "Nome é obrigatório.")
         private String nome;
@@ -30,6 +31,7 @@ public class Missao {
 
     @Column (name = "dificuldade", nullable = false)
         @NotBlank(message = "Dificuldade é obrigatória")
+        @Size (min = 1, max = 1, message = "Dificuldade deve ter um caracter")
         private String dificuldade;
     
 }

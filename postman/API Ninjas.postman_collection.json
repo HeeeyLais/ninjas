@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4e749e8d-81e2-4138-b922-db956552e4a2",
+		"_postman_id": "3abefd64-d661-461d-8cf1-1c1be25c102b",
 		"name": "API Ninjas",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -273,6 +273,132 @@
 							"port": "8080",
 							"path": [
 								"ninjas"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Missões",
+			"item": [
+				{
+					"name": "listarMissoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/missoes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"missoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrarMissao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Espiões inimigos foram vistos coletando informações sobre a vila. Localize os suspeitos, monitore seus movimentos e impeça o vazamento de dados.\",\r\n    \"dificuldade\": \"A\",\r\n    \"nome\": \"Caça aos Espiões\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/missoes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"missoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarMissoesPorDificuldade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/missoes/C",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"missoes",
+								"C"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletarMissao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Moradores de uma vila relataram o desaparecimento de animais durante a noite. Investigue a floresta próxima, descubra a causa dos ataques e elimine a ameaça antes que alguém seja ferido.\",\r\n        \"dificuldade\": \"S\",\r\n        \"nome\": \"Mistério na Floresta\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/missoes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"missoes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizarMissao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Moradores de uma vila relataram o desaparecimento de animais durante a noite. Investigue a floresta próxima, descubra a causa dos ataques e elimine a ameaça antes que alguém seja ferido.\",\r\n        \"dificuldade\": \"S\",\r\n        \"nome\": \"Mistério na Floresta\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/missoes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"missoes",
+								"2"
 							]
 						}
 					},
